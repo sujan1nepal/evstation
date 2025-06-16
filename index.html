@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCharge & Dine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GreenCharge & Dine</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#ev-charging">EV Charging</a>
+            <a href="#restaurant">Restaurant</a>
+            <a href="#menu">Menu</a>
+            <a href="#forms">Book & Order</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to GreenCharge & Dine</h2>
+        <p>Your one-stop destination to recharge your vehicle and enjoy a delicious meal.</p>
+    </section>
+
+    <section id="ev-charging">
+        <h2>EV Charging Station</h2>
+        <ul>
+            <li>Fast and Standard Charging Options</li>
+            <li>24/7 Service</li>
+            <li>Real-time Charging Availability</li>
+            <li>Payment via App or Card</li>
+            <li>Eco-friendly Energy Sources</li>
+        </ul>
+    </section>
+
+    <section id="restaurant">
+        <h2>Restaurant</h2>
+        <p>Enjoy a variety of healthy and delicious meals while your EV charges.</p>
+        <ul>
+            <li>Breakfast, Lunch, and Dinner</li>
+            <li>Local and International Cuisine</li>
+            <li>Cozy Ambience & Free Wi-Fi</li>
+            <li>Family and Pet Friendly</li>
+        </ul>
+    </section>
+
+    <section id="menu">
+        <h2>Menu Highlights</h2>
+        <ul>
+            <li>Veg & Non-Veg Options</li>
+            <li>Specialty Coffees & Desserts</li>
+            <li>Kids’ Meals</li>
+            <li>Vegan & Gluten-Free Choices</li>
+        </ul>
+        <button id="showMenuBtn">See Full Menu</button>
+        <div id="fullMenu" style="display:none;">
+            <h3>Full Menu</h3>
+            <ul>
+                <li>Fresh Green Salad</li>
+                <li>Classic Veg/Chicken Sandwiches</li>
+                <li>Italian Pasta (Veg/Chicken)</li>
+                <li>Gourmet Burgers (Veg/Beef/Chicken)</li>
+                <li>Seasonal Curries (Vegan Options)</li>
+                <li>Fresh Juices, Smoothies, Specialty Coffees</li>
+                <li>Desserts & Pastries</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="forms">
+        <h2>Reservation & Orders</h2>
+        <div class="form-container">
+            <div>
+                <h3>Book a Table</h3>
+                <form id="reservationForm" autocomplete="off">
+                    <label>Name:<br><input type="text" name="name" required></label><br>
+                    <label>Email:<br><input type="email" name="email" required></label><br>
+                    <label>Phone:<br><input type="tel" name="phone" required></label><br>
+                    <label>Date:<br><input type="date" name="date" required></label><br>
+                    <label>Time:<br><input type="time" name="time" required></label><br>
+                    <label>Number of Guests:<br><input type="number" name="guests" min="1" required></label><br>
+                    <button type="submit">Reserve Table</button>
+                </form>
+                <div id="reservationMsg" class="msg"></div>
+            </div>
+            <div>
+                <h3>Order Food</h3>
+                <form id="orderForm" autocomplete="off">
+                    <label>Name:<br><input type="text" name="order_name" required></label><br>
+                    <label>Phone:<br><input type="tel" name="order_phone" required></label><br>
+                    <label>Select Items:<br>
+                        <select name="items" multiple required>
+                            <option value="Salad">Salad</option>
+                            <option value="Sandwich">Sandwich</option>
+                            <option value="Pasta">Pasta</option>
+                            <option value="Burger">Burger</option>
+                            <option value="Curry">Curry</option>
+                            <option value="Juice">Juice</option>
+                            <option value="Coffee">Coffee</option>
+                            <option value="Dessert">Dessert</option>
+                        </select>
+                    </label><br>
+                    <label>Notes:<br><textarea name="notes"></textarea></label><br>
+                    <button type="submit">Order Now</button>
+                </form>
+                <div id="orderMsg" class="msg"></div>
+            </div>
+            <div>
+                <h3>Book Charging Station</h3>
+                <form id="chargingForm" autocomplete="off">
+                    <label>Name:<br><input type="text" name="charge_name" required></label><br>
+                    <label>Phone:<br><input type="tel" name="charge_phone" required></label><br>
+                    <label>Vehicle Model:<br><input type="text" name="vehicle" required></label><br>
+                    <label>Charging Type:<br>
+                        <select name="charging_type" required>
+                            <option value="Fast">Fast</option>
+                            <option value="Standard">Standard</option>
+                        </select>
+                    </label><br>
+                    <label>Date:<br><input type="date" name="charge_date" required></label><br>
+                    <label>Time:<br><input type="time" name="charge_time" required></label><br>
+                    <button type="submit">Book Charging</button>
+                </form>
+                <div id="chargingMsg" class="msg"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Location & Contact</h2>
+        <p>Find us at: 123 Green Road, Electric City</p>
+        <p>Call: (123) 456-7890 | Email: info@greenchargedine.com</p>
+        <p>Open: 6am - 11pm (Restaurant) | 24/7 (Charging)</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GreenCharge & Dine. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
